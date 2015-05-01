@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2015-3-29 2:51:13 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.sjh.entities.Network" table="NETWORK">
+        <id name="networkId" type="java.lang.Integer">
+            <column name="NETWORK_ID" />
+            <generator class="native" />
+        </id>
+        <property name="networkName" type="java.lang.String">
+            <column name="NETWORK_NAME" />
+        </property>
+        <property name="asNo" type="int">
+            <column name="AS_NO" />
+        </property>
+        <property name="networkDesc" type="java.lang.String">
+            <column name="NETWORK_DESC" />
+        </property>
+    </class>
+</hibernate-mapping>
